@@ -1,1 +1,15 @@
-# BridgeLabz_2115000361
+feature/19jan2025- java practice problems
+feature/22jan2025 - Submission of Programming Elements Practices
+feature/23jan2025 - Submission on Control Flow Practices
+feature/25jan2025 - Submissions on Arrays Practices
+feature/28jan2025 - Submissions on Java Methods Practices
+feature/29jan2025 - Built-In Function Practice Problem
+feature/30jan2025 - Submissions on Java String Practice Problems
+feature/31jan2025 - Submission of Java Class and Object
+feature/2feb2025 - Submission of Java Constructors, Instance vs. Class Variables, Access Modifiers
+feature/4feb2025 - Submission of this, static, final key words and instanceof operator
+
+
+
+
+
