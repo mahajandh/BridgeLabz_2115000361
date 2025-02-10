@@ -22,3 +22,5 @@
 - Submission of Object Oriented Design Principles
 ## feature/7feb2025
 - Submission of Inheritance
+## feature/10feb2025
+- Submission of Encapsulation, Polymorphism, Interface and Abstract Class
