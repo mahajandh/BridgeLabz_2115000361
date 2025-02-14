@@ -28,3 +28,5 @@
 - Submission of Data Structure - LinkedList
 ## feature/13feb2025
 - Submission of Stack , Queue, HashMap and Hashing Function
+## feature/14feb2025
+- Submission of Sorting Algorithms
