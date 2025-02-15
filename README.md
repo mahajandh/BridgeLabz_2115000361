@@ -30,3 +30,5 @@
 - Submission of Stack , Queue, HashMap and Hashing Function
 ## feature/14feb2025
 - Submission of Sorting Algorithms
+## feature/15feb2025
+- Submission of Linear and Binary Search
