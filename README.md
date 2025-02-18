@@ -34,3 +34,5 @@
 - Submission of Linear and Binary Search
 ## feature/17feb2025
 - Submission of Algorithm's Runtime Analysis & Big-O Notation
+## feature/18feb2025
+-  Submission of Java Generics
