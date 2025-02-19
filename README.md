@@ -38,3 +38,5 @@
 -  Submission of Java Generics
 ## feature/19feb2025
 -  Submission of Collections
+## feature/20feb2025
+- Submission of Java Streams
