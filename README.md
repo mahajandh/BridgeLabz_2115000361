@@ -40,3 +40,5 @@
 -  Submission of Collections
 ## feature/20feb2025
 - Submission of Java Streams
+## feature/21feb2025
+- Submission of Exceptions
