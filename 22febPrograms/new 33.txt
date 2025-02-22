@@ -1,0 +1,32 @@
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import java.util.List;
+
+public class CensorBadWords {
+    private static final List<String> BAD_WORDS = List.of("damn", "stupid");
+    
+    public String censorText(String input) {
+        for (String word : BAD_WORDS) {
+            input = input.replaceAll("\\b" + word + "\\b", "****");
+        }
+        return input;
+    }
+
+    public static class CensorBadWordsTest {
+        private final CensorBadWords censor = new CensorBadWords();
+
+        @Test
+        void testCensorBadWords() {
+            String input = "This is a damn bad example with some stupid words.";
+            String expected = "This is a **** bad example with some **** words.";
+            assertEquals(expected, censor.censorText(input));
+        }
+        
+        @Test
+        void testNoBadWords() {
+            String input = "This is a clean sentence.";
+            String expected = "This is a clean sentence.";
+            assertEquals(expected, censor.censorText(input));
+        }
+    }
+}

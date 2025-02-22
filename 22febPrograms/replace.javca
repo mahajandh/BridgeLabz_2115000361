@@ -1,0 +1,26 @@
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+public class ReplaceMultipleSpaces {
+    public String replaceMultipleSpaces(String input) {
+        return input.replaceAll("\\s+", " ").trim();
+    }
+
+    public static class ReplaceMultipleSpacesTest {
+        private final ReplaceMultipleSpaces replacer = new ReplaceMultipleSpaces();
+
+        @Test
+        void testReplaceMultipleSpaces() {
+            String input = "This   is   an   example    with  multiple   spaces.";
+            String expected = "This is an example with multiple spaces.";
+            assertEquals(expected, replacer.replaceMultipleSpaces(input));
+        }
+        
+        @Test
+        void testNoExtraSpaces() {
+            String input = "NoExtraSpacesHere";
+            String expected = "NoExtraSpacesHere";
+            assertEquals(expected, replacer.replaceMultipleSpaces(input));
+        }
+    }
+}

@@ -1,0 +1,25 @@
+import java.util.*;
+import java.util.regex.*;
+
+public class ProgrammingLanguageExtractor {
+    public static List<String> extractLanguages(String text, List<String> languages) {
+        List<String> foundLanguages = new ArrayList<>();
+        for (String lang : languages) {
+            Pattern pattern = Pattern.compile("\\b" + lang + "\\b", Pattern.CASE_INSENSITIVE);
+            Matcher matcher = pattern.matcher(text);
+            if (matcher.find()) {
+                foundLanguages.add(lang);
+            }
+        }
+        return foundLanguages;
+    }
+
+    public static void main(String[] args) {
+        String text = "I love Java, Python, and JavaScript, but I haven't tried Go yet.";
+        List<String> languages = Arrays.asList("Java", "Python", "JavaScript", "Go", "C++", "Ruby", "Swift");
+
+        List<String> result = extractLanguages(text, languages);
+        System.out.println(String.join(", ", result));  
+        // Output: Java, Python, JavaScript, Go
+    }
+}

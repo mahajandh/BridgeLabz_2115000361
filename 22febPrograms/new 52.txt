@@ -1,0 +1,27 @@
+import java.util.*;
+import java.util.regex.*;
+
+public class RepeatingWordsFinder {
+    public static Set<String> findRepeatingWords(String text) {
+        Set<String> repeatedWords = new HashSet<>();
+        Set<String> seenWords = new HashSet<>();
+        Pattern pattern = Pattern.compile("\\b(\\w+)\\b");
+        Matcher matcher = pattern.matcher(text);
+
+        while (matcher.find()) {
+            String word = matcher.group().toLowerCase();
+            if (!seenWords.add(word)) {
+                repeatedWords.add(word);
+            }
+        }
+
+        return repeatedWords;
+    }
+
+    public static void main(String[] args) {
+        String text = "This is is a repeated repeated word test.";
+        Set<String> result = findRepeatingWords(text);
+        System.out.println(String.join(", ", result));  
+        // Output: is, repeated
+    }
+}
