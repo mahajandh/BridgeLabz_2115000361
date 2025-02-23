@@ -44,3 +44,5 @@
 - Submission of Exceptions
 ## feature/22feb2025
 - 05 Submission of Regex & JUnit
+## feature/24feb2025
+- Submission of Annotations, Reflection
