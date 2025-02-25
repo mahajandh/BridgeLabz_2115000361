@@ -1,0 +1,25 @@
+import java.io.*;
+
+public class ReadLargeCSV {
+    public static void main(String[] args) {
+        String filePath = "large_file.csv";
+        int batchSize = 100;
+        int totalRecords = 0;
+        String line;
+
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            br.readLine();
+            while (true) {
+                int count = 0;
+                while (count < batchSize && (line = br.readLine()) != null) {
+                    count++;
+                }
+                if (count == 0) break;
+                totalRecords += count;
+                System.out.println("Processed: " + totalRecords + " records");
+            }
+        } catch (IOException e) {
+            System.err.println("Error reading file: " + e.getMessage());
+        }
+    }
+}
