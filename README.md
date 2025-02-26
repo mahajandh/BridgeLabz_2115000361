@@ -48,3 +48,5 @@
 - Submission of Annotations, Reflection
 ## feature/25feb2025
 -  Submission of CSV Data Handling
+## feature/26feb2025
+- Submission of JSON Data
